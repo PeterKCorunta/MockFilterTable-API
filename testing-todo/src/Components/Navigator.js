@@ -6,7 +6,8 @@ function Navigator({posts, decrement, increment, no}) {
 
     const sliders = posts.map((post, i) => {
         
-    return (<div key={post.id} 
+    return (
+    <div key={post.id} 
         className={`slider_container ${((post.id===no)) 
         ? 'scroll_center' : ``}`}><Slider  key={post.id} 
                                             slidepic={post.name}
@@ -23,6 +24,7 @@ function Navigator({posts, decrement, increment, no}) {
                                                                                 quote={post.quotes} 
                                                                                 val={no} 
                                                                                 index={i+1}/></div>
+          
           // <div key={post.id} className={`slider_container ${((post.id>no)) 
           //                                   ? 'scroll_right' : ``}`}><Slider  key={post.id} 
           //                                                                       slidepic={post.name}

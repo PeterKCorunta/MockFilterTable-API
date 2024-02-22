@@ -5,7 +5,7 @@ import { useContext } from 'react'
 
 function Slider({slidepic, val, index, slideNo, quote}) {
 
-   const imgbackgroundPic = useContext(SlideContext)
+   const contextPic = useContext(SlideContext)
 
   return (
     <div key={val-1} className='container_slide'>
@@ -13,10 +13,10 @@ function Slider({slidepic, val, index, slideNo, quote}) {
       <p className='quote'>{quote}</p>
       <h1>{slideNo}</h1>
       
-        <img
+      <img
         key={val-1}
         loading='lazy'
-        src={imgbackgroundPic}//{slidepic}//{pics[no - 1]} 
+        src={contextPic}//{slidepic}//{pics[no - 1]} 
         alt={`${val-1}`}
       />
       

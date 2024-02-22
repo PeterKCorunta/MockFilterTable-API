@@ -31,7 +31,7 @@
   border:1px solid;
   /* padding:2px 0px 2px 4px; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* flex-direction: row-reverse; */
   /* justify-content: space-between; */
   align-items: center;
@@ -44,7 +44,7 @@
   height:96%;
   border: 1px solid black;
   border-radius: 10px;
-  margin: 7px 5px 3px 5px;
+  margin: 5px 5px 3px 5px;
   top: 2%;
   /* margin-left:-196%; */
   transition: all 2s ease;
@@ -57,8 +57,8 @@
   border: 1px solid black;
   border-radius: 10px;
   top: 2%;
-  margin-top:1.5%;
-  transition:margin 2s ease;
+  margin-left:1.5%;
+  transition:margin-left 2s ease;
 }
 
 .scroll_left{
@@ -67,8 +67,8 @@
   border: 1px solid black;
   border-radius: 10px;
   top: 2%;
-  margin-top:-98.5%;
-  transition:margin 2s ease;
+  margin-left:-98.5%;
+  transition:margin-left 2s ease;
 }
 
 .scroll_right{

@@ -13,7 +13,7 @@ function Accordion({message, istoggle, classname, toggleVisibility, selected, n}
 
   return (
     <div className={`container ${((selected===n) && istoggle===false)?'flexy':'container'}`} style={{ height: `${containerHeight}px` }}>
-        <button onClick={toggleVisibility}>{message.question}{((selected===n) && istoggle===false)? <ArrowUp /> : <ArrowDown />}</button>
+        <button onClick={toggleVisibility}><h4>{message.question}</h4>{((selected===n) && istoggle===false)? <ArrowUp /> : <ArrowDown />}</button>
         <ol className={`content ${((selected===n))? ((istoggle===false)?'visible':'invisible') : 'invisible' }`}>
            {message.answer.map(item => {return <li key={n} className='more_content'>{item.content}</li>})}
         </ol>

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react'
 import Slider from './Slider'
 import NestedContext from './NestedContext'
 
+
 function Navigator({posts, decrement, increment, no}) {
+
+  
 
     const sliders = posts.map((post, i) => {
         
